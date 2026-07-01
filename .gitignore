@@ -1,0 +1,56 @@
+# Katalon
+Reports/
+Libs/
+bin/
+tmp/
+settings/
+Drivers/
+console.properties
+
+# Logs
+*.log
+
+# Screenshots
+**/error-screenshots/
+**/mobile-error-screenshots/
+**/mobile-step-screenshots/
+
+# Evidence
+**/evidence-docx/
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Java
+*.class
+
+# Test artifacts
+JUnit_Report/
+cucumber_report/
+# Eclipse / Katalon IDE
+.cache/
+.settings/
+.classpath
+.project
+
+# Katalon generated reports/evidence
+Reports/
+Reports/**
+Libs/
+bin/
+tmp/
+*.log
+*.png
+*.docx
+**/cucumber_report/
+**/error-screenshots/
+**/evidence-docx/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

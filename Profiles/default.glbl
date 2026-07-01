@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Habilitar integración Zephyr/Jira</description>
+      <initValue>'true'</initValue>
+      <name>ZS_ENABLE_INTEGRATION</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>URL Jira Cloud</description>
+      <initValue>'https://qabanorte.atlassian.net'</initValue>
+      <name>ZS_JIRA_URL</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email Atlassian</description>
+      <initValue>'adrian.matosmx@iteraprocess.com'</initValue>
+      <name>ZS_JIRA_USER</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>API Token Atlassian</description>
+      <initValue>'ATATT3xFfGF0CX4SYde7VRL7rg3bsNySCl5lbUjMT_cYGYNeT1kL2u8Ye31P1Hb0RFbKLmB79dRd4m42a9IMExz7UF-EQ02qrIrhhhAOSeLFvI8sUWUIYFw6iiyFOxo_v2zMqmzzUyKN5pxGet7J456XMHODiPeuxI0Q2gMEguRzpSDMzxKGHTU=0FF2BFEC'</initValue>
+      <name>ZS_JIRA_TOKEN</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>API Base URL Zephyr</description>
+      <initValue>'https://api.zephyrscale.smartbear.com/v2'</initValue>
+      <name>ZS_ZEPHYR_BASE_URL</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Bearer Token Zephyr</description>
+      <initValue>'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczovL3FhYmFub3J0ZS5hdGxhc3NpYW4ubmV0IiwidXNlciI6eyJhY2NvdW50SWQiOiI3MTIwMjA6OWFiMDA1NmUtOTFhNi00ZWRlLTlmMmYtZGQ4YThkYzAwMDU4IiwidG9rZW5JZCI6IjQ0ZDg5YzEwLTVlOWQtNGE4NS04YjNlLWY4OTBlYzhlNzllZiJ9fSwiaXNzIjoiY29tLmthbm9haC50ZXN0LW1hbmFnZXIiLCJzdWIiOiI5MjBmMDM5Yi04NmI4LTMwZGYtYTVjMC0xZGYzZjJkMWU2YTYiLCJleHAiOjE4MDMwNTIyNDcsImlhdCI6MTc3MTUxNjI0N30.erjJjtKORLQHW_YB-GSsw18dSL4nrB9S6xy27zSyHGY'</initValue>
+      <name>ZS_ZEPHYR_TOKEN</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Project Key Zephyr/Jira</description>
+      <initValue>'DGDC'</initValue>
+      <name>ZS_PROJECT_KEY</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Key de ciclo existente</description>
+      <initValue>'DGDC-R2'</initValue>
+      <name>ZS_TEST_CYCLE_KEY</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ID del tipo de issue para evidencia</description>
+      <initValue>'10449'</initValue>
+      <name>ZS_EVIDENCE_ISSUE_TYPE_ID</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Crear test case en Zephyr si no existe</description>
+      <initValue>'true'</initValue>
+      <name>ZS_TC_CREATE_IF_MISSING</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Custom fields obligatorios para crear Test Case en Zephyr</description>
+      <initValue>'{&quot;Utilización&quot;:[&quot;Regresión&quot;],&quot;Tipo de caso&quot;:&quot;Automatizado&quot;,&quot;Resultado esperado&quot;:&quot;N/A&quot;,&quot;Aplicativo&quot;:&quot;Yalo&quot;}'</initValue>
+      <name>ZS_TESTCASE_CUSTOMFIELDS_JSON</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Executor Account ID</description>
+      <initValue>'712020:9ab0056e-91a6-4ede-9f2f-dd8a8dc00058'</initValue>
+      <name>ZS_EXECUTOR_ACCOUNT_ID</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Assignee Account ID</description>
+      <initValue>'712020:9ab0056e-91a6-4ede-9f2f-dd8a8dc00058'</initValue>
+      <name>ZS_ASSIGNEE_ACCOUNT_ID</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Owner Account ID Zephyr</description>
+      <initValue>'712020:9ab0056e-91a6-4ede-9f2f-dd8a8dc00058'</initValue>
+      <name>ZS_TC_OWNER_ACCOUNT_ID</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Version Zephyr</description>
+      <initValue>'1.0'</initValue>
+      <name>ZS_VERSION_NAME</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Environment Zephyr</description>
+      <initValue>'CERTIFICACIÓN'</initValue>
+      <name>ZS_ENVIRONMENT_NAME</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Formato del nombre del Test Case en Zephyr. Valores: CASE_ID, CASE_ID_TEST_NAME</description>
+      <initValue>'CASE_ID_TEST_NAME'</initValue>
+      <name>ZS_TC_NAME_FORMAT</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
