@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f5962021-dd73-4c78-8b61-5a0ea850ca3e</dataFileGUID>
-   <dataSourceUrl>/Users/amatosya/Downloads/TestControlBDD.xlsx</dataSourceUrl>
+   <dataSourceUrl>/Users/amatosya/Documents/katalon/TestControlBDD.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

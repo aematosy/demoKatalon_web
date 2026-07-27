@@ -4,6 +4,9 @@ import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import internal.GlobalVariable
 import java.net.URLEncoder
+import java.time.LocalDate
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 
 class ZephyrScaleService {
 
@@ -189,6 +192,8 @@ class ZephyrScaleService {
 		if (realTimeMs && realTimeMs > 0L) {
 			body.executionTime = realTimeMs
 		}
+		
+		applyExecutionCustomFields(body)
 
 		println "[ZS-DEMO] Creando ejecución Zephyr para TC=${testCaseKey}"
 		println "[ZS-DEMO] Body=${body}"
@@ -350,6 +355,43 @@ class ZephyrScaleService {
 		def response = post("${baseUrl}/testexecutions/${URLEncoder.encode(executionKey, 'UTF-8')}/links/issues", body)
 
 		println "[ZS-DEMO] Issue vinculado a ejecución Zephyr. Response=${response}"
+	}
+	
+	private void applyExecutionCustomFields(Map body) {
+		
+			String rawValue = getGlobalValue('ZS_EXECUTION_PLANNED_DATE')
+		
+			LocalDate plannedDate = resolvePlannedDate(rawValue)
+		
+			String zephyrDate = plannedDate.plusDays(1).toString()
+		
+			body.customFields = [
+				'Fecha Planificada': zephyrDate
+			]
+		
+			println "[ZS-DEMO] Fecha Planificada origen=${plannedDate} enviada=${zephyrDate}"
+		}
+	
+	private LocalDate resolvePlannedDate(String rawValue) {
+		String value = rawValue?.trim()
+	
+		if (value.equalsIgnoreCase('TESTCYCLE')) {
+			return getPlannedStartDateFromTestCycle()
+		}
+	
+		return LocalDate.parse(value, DateTimeFormatter.ISO_LOCAL_DATE)
+	}
+	
+	private LocalDate getPlannedStartDateFromTestCycle() {
+		def cycle = get("${baseUrl}/testcycles/${URLEncoder.encode(testCycleKey, 'UTF-8')}")
+	
+		String plannedStartDate = cycle?.plannedStartDate?.toString()
+	
+		if (!plannedStartDate) {
+			throw new RuntimeException("El ciclo ${testCycleKey} no tiene plannedStartDate configurado.")
+		}
+	
+		return LocalDate.parse(plannedStartDate.substring(0, 10))
 	}
 
 	private String safeDescription(String description, String fallback) {

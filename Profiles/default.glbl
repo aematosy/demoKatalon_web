@@ -123,4 +123,11 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>TESTCYCLE → usa la fecha planificada del ciclo. yyyy-MM-dd → usa la fecha manual.</description>
+      <initValue>'TESTCYCLE'</initValue>
+      <name>ZS_EXECUTION_PLANNED_DATE</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
